@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>project03</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 mb-5 d-flex justify-content-center text-light">
+        Register New Employee
+      </h1>
+      <form>
+        <div class="d-flex">
+          <div class="form-group w-50 mr-2">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+
+          <div class="form-group w-50">
+            <select class="form-control" id="department">
+              <option value="" selected disabled>Department</option>
+              <option>Acount</option>
+              <option>IT</option>
+              <option>HR</option>
+              <option>Sales</option>
+              <option>Call Center</option>
+            </select>
+          </div>
+        </div>
+        <div class="d-flex ok">
+          <div class="form-group w-100">
+            <input
+              type="text"
+              onkeyup="calcSalary()"
+              class="form-control"
+              id="Salary"
+              placeholder="Salary"
+            />
+          </div>
+          <div class="form-group w-50">
+            <input
+              type="text"
+              class="form-control"
+              onkeyup="calcSalary()"
+              id="tax"
+              placeholder="Tax"
+            />
+          </div>
+          <div class="form-group w-50">
+            <input
+              type="text"
+              onkeyup="calcSalary()"
+              class="form-control"
+              id="Securety"
+              placeholder="Social Securety"
+            />
+          </div>
+          <div class="form-group w-100">
+            <input
+              type="number"
+              readonly
+              class="form-control"
+              id="total"
+              placeholder="Total"
+            />
+          </div>
+        </div>
+        <div class="d-flex ik mb-3">
+          <button class="btn btn-primary w-100" id="save">save</button>
+        </div>
+        <div class="d-flex mb-3">
+          <input
+            type="search"
+            class="form-control mr-3"
+            id="formGroupExampleInput2"
+            placeholder="search"
+          />
+          <button class="btn btn-success w-50">Search</button>
+        </div>
+        <div class="d-flex">
+          <button class="btn btn-danger w-100" id="delete-data">
+            Delete All
+          </button>
+        </div>
+      </form>
+      <h2 class="mt-5 d-flex justify-content-center text-light">
+        List of Employees
+      </h2>
+      <table class="table mt-5">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Sallary</th>
+            <th scope="col">Tax</th>
+            <th scope="col">Secuireyt</th>
+            <th scope="col">Net Sallary</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

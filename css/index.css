@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(59, 56, 56);
+}
+
+.ik {
+  width: 100%;
+  justify-content: center;
+}
+.ok div {
+  margin-left: 3px;
+}
+
+tbody {
+  color: #fff;
+}
