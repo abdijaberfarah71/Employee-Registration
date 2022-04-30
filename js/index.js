@@ -103,12 +103,13 @@ function showData() {
 // Clear Inputs
 
 function clearData() {
-  firtName.value = "";
-  salary.value = "";
-  department.value = "";
-  securety.value = "";
-  tax.value = "";
-  netSalay.value = "";
+  firtName.value =
+    salary.value =
+    department.value =
+    securety.value =
+    tax.value =
+    netSalay.value =
+      "";
 }
 
 showData();
